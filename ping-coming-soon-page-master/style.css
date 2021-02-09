@@ -1,0 +1,122 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+body {
+  font-family: "Libre Franklin", sans-serif;
+  font-size: 20px;
+}
+.logo {
+  padding-bottom: 2rem;
+}
+h1 {
+  font-weight: 300;
+  color: hsl(0, 0%, 59%);
+  padding: 1rem;
+}
+h1 span {
+  font-weight: 700;
+  color: hsl(209, 33%, 12%);
+}
+.header p {
+  font-size: 1rem;
+  padding-bottom: 1.5rem;
+}
+.form {
+  position: relative;
+}
+.email-input {
+  border: 1px solid hsl(223, 87%, 63%);
+  border-radius: 30px;
+  padding: 0.9rem;
+  width: 35vw;
+  max-width: 100%;
+}
+.error-email {
+  border: 1px solid hsl(354, 100%, 66%);
+  border-radius: 30px;
+  padding: 0.9rem;
+  width: 35vw;
+  max-width: 100%;
+}
+.btn {
+  border: none;
+  border-radius: 30px;
+  background-color: hsl(223, 87%, 63%);
+  box-shadow: 3px 4px 5px 1px hsl(223, 100%, 88%);
+  color: #ffffff;
+  font-weight: 600;
+  padding: 0.9rem;
+  width: 15vw;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.img-container {
+  width: 500vw;
+  max-width: 100%;
+  padding: 2rem;
+}
+.img-container img {
+  width: 50vw;
+  max-width: 100%;
+  height: auto;
+}
+.social-icons {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 1rem;
+}
+.icon {
+  border: 1px solid hsl(223, 100%, 88%);
+  border-radius: 50%;
+  color: hsl(223, 87%, 63%);
+  font-size: 1rem;
+  text-align: center;
+  align-items: center;
+  padding: 1rem;
+  margin: 0.5rem;
+}
+.footer {
+  font-size: 1rem;
+  color: hsl(0, 0%, 59%);
+}
+
+.error-msg {
+  color: hsl(354, 100%, 66%);
+  font-size: 1rem;
+  display: none;
+  position: absolute;
+  top: 3rem;
+  left: 1rem;
+  z-index: 1;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    font-size: 1rem;
+  }
+  .form {
+    display: flex;
+    flex-direction: column;
+  }
+  .email-input {
+    width: 65vw;
+  }
+  .btn {
+    width: 65vw;
+    margin-top: 1.5rem;
+  }
+  .img-container img {
+    width: 70vw;
+  }
+} ;
